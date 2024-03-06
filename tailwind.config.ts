@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import { poppins, roboto } from "./app/utils/font"
 
 const config = {
   darkMode: ["class"],
@@ -73,6 +74,10 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    fontFamily: {
+        roboto: ["var(--font-roboto)"],
+        poppins: ["var(--font-poppins)"],
+      },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
