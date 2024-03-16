@@ -31,9 +31,9 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-16 px-4 fixed nav">
+    <div className="z-[1000] flex justify-between items-center w-full h-16 px-4 fixed nav">
       <div>
-        <h1 className="text-5xl font-signature ml-2">
+        <h1 className="text-5xl font-extrabold ml-2">
           <a
             className="link-underline link-underline-black"
             href=""
@@ -56,7 +56,7 @@ const Navbar = () => {
         ))}
         <ThemeToggle />
       </ul>
-      <div className="sm: flex gap-5">
+      <div className="md:hidden sm: flex gap-5">
         <div className="">
         <ThemeToggle />
         </div>
